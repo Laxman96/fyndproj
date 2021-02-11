@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="1.9920" tests="2" failures="0">
-  <testsuite name="Root Suite" timestamp="2020-10-22T00:51:19" tests="0" time="0.0000" failures="0">
+<testsuites name="Mocha Tests" time="3.9230" tests="4" failures="4">
+  <testsuite name="Root Suite" timestamp="2021-02-11T11:07:13" tests="0" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Posts" timestamp="2020-10-22T00:51:19" tests="0" file="C:\Users\dilpr\Desktop\automation-bro\super-api-tests\test\posts.js" time="0.0000" failures="0">
+  <testsuite name="employees" timestamp="2021-02-11T11:07:13" tests="0" file="D:\my folder\testing\fyndproj\test\posts.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="POST" timestamp="2020-10-22T00:51:20" tests="2" file="C:\Users\dilpr\Desktop\automation-bro\super-api-tests\test\posts.js" time="1.9920" failures="0">
-    <testcase name="Posts POST /posts" time="1.0100" classname="/posts">
+  <testsuite name="/create" timestamp="2021-02-11T11:07:14" tests="2" file="D:\my folder\testing\fyndproj\test\posts.js" time="0.9440" failures="2">
+    <testcase name="employees /create create" time="0.9380" classname="create">
+      <failure message="Target cannot be null or undefined." type="AssertionError"><![CDATA[AssertionError: Target cannot be null or undefined.
+    at _callee2$ (test\/posts.js:37:37)
+    at tryCatch (node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
     </testcase>
-    <testcase name="Posts POST posts/:id" time="0.9820" classname="posts/:id">
+    <testcase name="employees /create /employee/{id}" time="0.0060" classname="/employee/{id}">
+      <failure message="emptId is invalid - undefined" type="Error"><![CDATA[Error: emptId is invalid - undefined
+    at _callee3$ (test\/posts.js:49:15)
+    at tryCatch (node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at D:\my folder\testing\fyndproj\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Context.<anonymous> (node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Negative Tests" timestamp="2021-02-11T11:07:15" tests="2" file="D:\my folder\testing\fyndproj\test\posts.js" time="2.9790" failures="2">
+    <testcase name="employees Negative Tests 422 Data validation failed" time="1.7320" classname="422 Data validation failed">
+      <failure message="expected undefined to equal 422" type="AssertionError"><![CDATA[AssertionError: expected undefined to equal 422
+    at _callee4$ (test\/posts.js:66:32)
+    at tryCatch (node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+    <testcase name="employees Negative Tests 401 Authentication failed" time="1.2470" classname="401 Authentication failed">
+      <failure message="expected undefined to equal 401" type="AssertionError"><![CDATA[AssertionError: expected undefined to equal 401
+    at _callee5$ (test\/posts.js:79:32)
+    at tryCatch (node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>

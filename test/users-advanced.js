@@ -10,16 +10,17 @@ describe.only('Employees1', () => {
     it('/create', () => {
       const data = {
         name: `name${Math.floor(Math.random() * 9999)}`,
+        //name: "Ldiki",
         salary: 9090,
-        age   : "22"
+        age   : "21"
       };
-
       return request
         .post('create')
         .send(data)
         .then((res) => {
           expect(res.body.data).to.deep.include(data);
           empId = res.body.data.id;
+         
         });
     });
   });
@@ -43,7 +44,7 @@ describe.only('Employees1', () => {
   describe('PUT', () => {
     it('/update/{id}', () => {
       const data = {
-        name: 'Don' + Math.floor(Math.random() * 99999) ,
+        name: "Mhahha" ,
         salary: Math.floor(Math.random() * 99999),
       };
 

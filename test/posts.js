@@ -29,14 +29,12 @@ describe.only('employees', () => {
         salary: Math.floor(Math.random() * 99999),
         age   : Math.floor(Math.random() * 99999),        
       };
-
       const res = await request
-        .post('/create')
+        .post('create')
         .send(data);
-
-      expect(res.body.data).to.deep.include(data);
-      empId = res.body.data.id;
-      console.log(empId,'muid');
+        expect(res.body.data).to.deep.include(data);
+        empId = res.body.data.id;
+        console.log(empId,'muid');
     });
 
     // dependent on previous test
@@ -54,7 +52,7 @@ describe.only('employees', () => {
   describe('Negative Tests', () => {
     it('422 Data validation failed', async () => {
       const data = {
-        name: "",
+        name: '',
         salary: "9090",
         age   : Math.floor(Math.random() * 99999),
       };

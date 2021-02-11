@@ -11,7 +11,7 @@ export const createRandomUserWithFaker = async () => {
   };
 
   const res = await request
-    .post(`/create`)
+    .post(`create`)
     .send(data);
 
   return res.body.data;
@@ -19,12 +19,12 @@ export const createRandomUserWithFaker = async () => {
 
 export const createRandomUser = async () => {
   const data = {
-    name: 'Dolphin' + Math.floor(Math.random() * 99999) ,
+    name: 'masten' + Math.floor(Math.random() * 99999) ,
     salary: 1223,
     age   : "22",
   };
   const res = await request
-    .post(`/create`)
+    .post(`create`)
     .send(data);
   return res.body.data;
 };
