@@ -2,12 +2,12 @@
 - Clone the repo locally
 - Run `npm i`
 
-## Run Tests
+## To Run Tests
 - `npm test`
 
-## Run mochawesome test report
+## To Run mochawesome test report
 - `npm run test-html`
 
-## Run junkines
+## To Run junkines
 - `npm run teset-junit
 
