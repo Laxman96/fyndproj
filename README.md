@@ -10,4 +10,3 @@
 
 ## To Run junkines
 - `npm run teset-junit
-
