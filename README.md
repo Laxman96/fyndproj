@@ -9,4 +9,5 @@
 - `npm run test-html`
 
 ## To Run junkines
-- `npm run teset-junit
+
+- `npm run test-junit`
