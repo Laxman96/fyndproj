@@ -1,3 +1,7 @@
+## Code
+ - Code was written in java script. 
+## Pre instalations
+- Install nodejs as it is required.
 ## To start
 - Clone the repo locally
 - Run `npm i`
